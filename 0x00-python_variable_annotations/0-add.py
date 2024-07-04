@@ -5,7 +5,7 @@
 
 def add(a: float, b: float) -> float:
     """The add function adds to float numbers
-    
+
     Args:
         a (float)
         b (float)
