@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-add = __import__('0-add').add
 
-print(add(1.11, 2.22) == 1.11 + 2.22)
-print(add.__annotations__)
+element_length =  __import__('9-element_length').element_length
+
+print(element_length.__annotations__)
