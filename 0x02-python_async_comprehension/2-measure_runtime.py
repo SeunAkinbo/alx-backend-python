@@ -3,11 +3,12 @@
 
 import time
 import asyncio
+from typing import List
 task = __import__('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> float:
     """The measure_runtime function"""
-    start = time.time()
+    start = time.perf_counter()
     await asyncio.gather(task(), task(), task(), task())
-    return time.time() - start
+    return time.perf_counter() - start
