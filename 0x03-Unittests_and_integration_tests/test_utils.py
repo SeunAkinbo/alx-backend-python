@@ -8,7 +8,7 @@ from utils import access_nested_map, get_json, memoize
 
 
 class TestAccessNestedMap(unittest.TestCase):
-
+    """Class TestAccessNestedMap"""
     @parameterized.expand([
         ({"a": 1}, ("a",), 1),
         ({"a": {"b": 2}}, ("a",), {"b": 2}),
@@ -38,6 +38,7 @@ class TestGetJson(unittest.TestCase):
         ("http://holberton.io", {"payload": False}),
     ])
     def test_get_json(self, test_url, test_payload):
+        """method test_get_json"""
         with patch('utils.requests.get') as mock_get:
             mock_response = Mock()
             mock_response.json.return_value = test_payload
